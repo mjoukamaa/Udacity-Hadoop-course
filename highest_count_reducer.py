@@ -45,7 +45,7 @@ for line in sys.stdin:
     valuesList.append(thisValue)
 
 
-# When exiting loop print, perform same
+# When exiting loop, perform same
 # determine-print-process for last key
 if oldKey != None:
 
