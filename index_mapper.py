@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+"""
+This mapper reads through forum posts of predefined format and splits their message
+body into separate words by space, punctuation or certain special characters. It
+outputs separated words as keys and post ids as values.
+"""
+
 import sys
 import csv
 import re
