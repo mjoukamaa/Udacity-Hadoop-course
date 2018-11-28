@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+"""
+Reducer outputs for each key which value appears most often
+with the key and how many times. In case of ties, all of
+the values with the highest count are outputted.
+"""
+
 import sys
 from collections import Counter
 
