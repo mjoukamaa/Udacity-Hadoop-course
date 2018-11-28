@@ -3,7 +3,7 @@
 """
 Reducer outputs for each key which value appears most often
 with the key and how many times. In case of ties, all of
-the values with the highest count are outputted.
+the values with the highest count are given in the output.
 """
 
 import sys
