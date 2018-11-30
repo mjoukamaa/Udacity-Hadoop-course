@@ -27,7 +27,7 @@ for line in reader:
     # Note when reducer moves to new key
     if oldKey and oldKey != thisKey:
 
-        # Loop through post stored in
+        # Loop through posts stored in
         # post_info_list, join author
         # user info and print each post
         for post in post_info_list:
