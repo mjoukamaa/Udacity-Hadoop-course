@@ -3,8 +3,8 @@
 """
 For each data point processed, mapper determines
 its type (user info/forum post), then outputs
-user/post id as key and as value type plus actual
-information.
+as key user id as key and as value data point
+type plus user stats or forum post contents.
 """
 
 import sys
