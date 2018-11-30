@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+"""
+For each word key, reducer stores forum post ids word appears in,
+then outputs number of appearances and index of forum posts where
+word has appeared.
+"""
+
 import sys
 
 # Initialize variables for holding keys and values
@@ -36,6 +42,8 @@ for line in sys.stdin:
 
     oldKey = thisKey
 
+    # Store each post id word appears in to
+    # holding list, ignore if doesn't work
     try:
         nodeIds.append(int(thisValue))
 
