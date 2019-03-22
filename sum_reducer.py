@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+"""
+Reducer outputs for each key the total sum
+of numerical values associated with it.
+"""
+
 import sys
 
 # Initialize variables for holding keys and values
@@ -25,9 +30,13 @@ for line in sys.stdin:
         oldKey = thisKey
         valueTotal = 0
 
-    # Process current key-value pair
+    # Process current key-value pair,
+    # ignore values that can't be summed
     oldKey = thisKey
-    valueTotal += float(thisValue)
+    try:
+        valueTotal += float(thisValue)
+    except:
+        continue
 
 # When exiting loop print total sum for last key
 if oldKey != None:
