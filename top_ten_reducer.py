@@ -8,7 +8,8 @@ with largest number values associated with them.
 
 import sys
 
-# Initialize variables for holding keys, values, and value number count
+# Initialize variables for holding keys,
+# values, and value number count
 valuesList = []
 topList = []
 oldKey = None
@@ -23,7 +24,7 @@ for line in sys.stdin:
         
     thisKey, thisValue = data
 
-    # Note when reducer moves to new key 
+    # Note when reducer moves to new key
     if oldKey and oldKey != thisKey:
         
         # Determine number of values of associated
